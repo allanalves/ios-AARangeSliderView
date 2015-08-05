@@ -15,6 +15,8 @@ AARangeSliderView.h
 AARangeSliderView.m
 ```
 
+And just import to your View Controller:
+
 ```objective-c
 #import "AARangeSliderView.h"
 ```
