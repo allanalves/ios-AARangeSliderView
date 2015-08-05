@@ -53,3 +53,27 @@ Connect the view dragging it to your view controller in the storyboard and selec
     rangeSlider.maxValue = 255;
     [self.view addSubview:rangeSlider];
 ```
+
+### Delegation Methods
+
+To get values when user changes it, set your View Controller the protocol and implement the methods as shown below:
+
+```objective-c
+@interface ViewController : UIViewController <AARangeSliderViewDelegate>
+```
+
+```objective-c
+
+- (void) didChangeStartValueOfSlider:(AARangeSliderView *)rangeSlider withValue:(float)value {
+    self.labelRange.text = [NSString stringWithFormat:@"Start: %.2f; End: %.2f;",
+                            value, self.rangeSlider.endRangeValue];
+}
+
+- (void) didChangeEndValueOfSlider:(AARangeSliderView *)rangeSlider withValue:(float)value {
+    self.labelRange.text = [NSString stringWithFormat:@"Start: %.2f; End: %.2f;",
+                            self.rangeSlider.startRangeValue, value];
+}
+
+```
+
+
