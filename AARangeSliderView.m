@@ -198,7 +198,6 @@ IB_DESIGNABLE
         if (sliderValue >= secondSlider.value - self.minRange) {
             limit = YES;
             firstSlider.value = secondSlider.value - self.minRange;
-            self.startRangeValue = sliderValue;
         } else limit = NO;
     }
     
@@ -206,7 +205,6 @@ IB_DESIGNABLE
         if (sliderValue <= firstSlider.value + self.minRange) {
             limit = YES;
             secondSlider.value = firstSlider.value + self.minRange;
-            self.endRangeValue = sliderValue;
         } else limit = NO;
     }
     
@@ -220,11 +218,13 @@ IB_DESIGNABLE
             if ([delegate respondsToSelector:@selector(didChangeStartValueOfSlider:withValue:)]) {
                 [delegate didChangeStartValueOfSlider:self withValue:sliderValue];
             }
+            self.startRangeValue = sliderValue;
         }
         if (sliderToChange == secondSlider) {
             if ([delegate respondsToSelector:@selector(didChangeEndValueOfSlider:withValue:)]) {
                 [delegate didChangeEndValueOfSlider:self withValue:sliderValue];
             }
+            self.endRangeValue = sliderValue;
         }
     }
 }
