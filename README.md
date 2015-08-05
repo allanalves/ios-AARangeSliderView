@@ -5,6 +5,12 @@ iOS Range Slider with Native Appearance and Easy Implementation
 
 Range Slider is a custom slider control to deal with ranges. With default native interface, it lets the implementation clean and natural.
 
+## Features
+* Auto-Layout Friendly
+  asdasdas
+
+* 
+
 ## Installation
 
 ### Objective-C
@@ -22,3 +28,11 @@ And just import to your View Controller:
 ```
 
 ## Usage
+
+### No Code
+
+### With Code
+
+```objective-c
+#import "AARangeSliderView.h"
+```
