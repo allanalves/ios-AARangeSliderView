@@ -7,7 +7,9 @@ Range Slider is a custom slider control to deal with ranges. With default native
 
 ## Features
 * Visible in your Storyboard
+
 ![storyboard](https://github.com/allanalves/ios-AARangeSliderView/blob/master/Images/rangeslider.png?raw=true)
+
 * Set Values on Attributes Inspector Window
 * Auto-Layout Friendly
 
