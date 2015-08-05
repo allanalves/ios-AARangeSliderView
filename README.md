@@ -35,7 +35,7 @@ And just import to your View Controller:
 
 ### No Code
 
-Create an UIView with class AARangeSliderView in Identity Inspector
+Create a view with class AARangeSliderView in Identity Inspector
 
 ![identity](https://github.com/allanalves/ios-AARangeSliderView/blob/master/Images/identity.png?raw=true)
 
