@@ -47,5 +47,7 @@ Connect the view dragging it to your view controller in the storyboard and selec
 ### With Code
 
 ```objective-c
-#import "AARangeSliderView.h"
+    AARangeSliderView *rangeSlider = [[AARangeSliderView alloc]
+                                      initWithFrame:CGRectMake(0, 0, 300, 50)];
+    rangeSlider.delegate = self;
 ```
