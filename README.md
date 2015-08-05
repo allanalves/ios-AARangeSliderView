@@ -50,4 +50,6 @@ Connect the view dragging it to your view controller in the storyboard and selec
     AARangeSliderView *rangeSlider = [[AARangeSliderView alloc]
                                       initWithFrame:CGRectMake(0, 0, 300, 50)];
     rangeSlider.delegate = self;
+    rangeSlider.maxValue = 255;
+    [self.view addSubview:rangeSlider];
 ```
