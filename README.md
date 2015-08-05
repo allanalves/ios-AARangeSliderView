@@ -39,6 +39,11 @@ Create an UIView with class AARangeSliderView in Identity Inspector
 
 ![identity](https://github.com/allanalves/ios-AARangeSliderView/blob/master/Images/identity.png?raw=true)
 
+Connect the view dragging it to your view controller in the storyboard and select the delegate option
+
+![outlet](https://github.com/allanalves/ios-AARangeSliderView/blob/master/Images/outlet.png?raw=true)
+![delegate](https://github.com/allanalves/ios-AARangeSliderView/blob/master/Images/delegate.png?raw=true)
+
 ### With Code
 
 ```objective-c
