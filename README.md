@@ -65,13 +65,11 @@ To get values when user changes it, set your View Controller the protocol and im
 ```objective-c
 
 - (void) didChangeStartValueOfSlider:(AARangeSliderView *)rangeSlider withValue:(float)value {
-    self.labelRange.text = [NSString stringWithFormat:@"Start: %.2f; End: %.2f;",
-                            value, self.rangeSlider.endRangeValue];
+    NSLog(@"Start: %.2f", value);
 }
 
 - (void) didChangeEndValueOfSlider:(AARangeSliderView *)rangeSlider withValue:(float)value {
-    self.labelRange.text = [NSString stringWithFormat:@"Start: %.2f; End: %.2f;",
-                            self.rangeSlider.startRangeValue, value];
+    NSLog(@"End: %.2f", value);
 }
 
 ```
